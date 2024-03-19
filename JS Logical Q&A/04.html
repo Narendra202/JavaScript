@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Find Area of a Triangle</title>
+</head>
+<body>
+    
+
+    <script>
+
+    // Right Angle Triagle
+    // using dynamic value 
+    // let base = parseInt(prompt("Enter base Value"));
+    // let height = parseInt(prompt("Enter height Value"));
+
+    // let area = (base * height)/2;
+
+    // console.log("the area of " + base + " and " + height + " is " + area);
+
+
+    // Any Other Triagle
+    // using dynamic value
+    // using heron's farmula 
+    let first = parseInt(prompt("Enter First Value"));
+    let second = parseInt(prompt("Enter Second Value"));
+    let third = parseInt(prompt("Enter Third Value"));
+
+    // find s value
+    let s = (first + second + third)/2;
+
+    // console.log(s);
+    let result = s * (s - first) * (s - second) * (s - third);
+    let area = Math.sqrt(result);
+    // console.log("the area of " + first + " "+ second + " and " + third + " is " + area);
+    console.log(area)
+
+    </script>
+</body>
+</html>
