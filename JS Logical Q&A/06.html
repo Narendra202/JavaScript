@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Convert kilometer to miles </title>
+</head>
+<body>
+    
+
+        <input type="number" name="name" id="name">
+        <button onclick="convert()">Convert</button>
+        <p id="res"></p>
+
+    <script>
+
+        // using javascript function
+        // using alert function
+        // function convert(){
+        //     let a = parseInt(prompt("Enter Value"));
+        //     let b = a * 0.621371;
+        //     console.log(`the value of ${a} kilometer in miles is : ${b}`);
+
+        // }
+
+       
+        function convert(){
+            let a = document.getElementById('name').value;
+            let b = a * 0.621371;
+            console.log(`the value of ${a} kilometer in miles is : ${b}`);
+            document.getElementById('res').innerText = b;
+            
+
+        }
+
+        
+    </script>
+</body>
+</html>
