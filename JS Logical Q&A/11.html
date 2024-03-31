@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Check Prime Number</title>
+</head>
+<body>
+    
+
+    <input type="number" id="name">
+    <button onclick="check()">Click</button>
+
+
+    <script>
+        function check(){
+            let a = document.getElementById('name').value;
+
+            if(a == 1){
+                console.log(`${a} is not prime number`);
+            }else if(a < 1){
+                console.log(`${a} is not prime number due to less then 1`)
+            }
+            else{
+                for(let i=2; i<a; i++){
+                    if(a % i == 0){
+                        var res = `${a} is not a prime number`;
+                        break;
+                    }else{
+                        var res = `${a} is a prime number`;
+                    }
+                }
+                console.log(res)
+            }
+        }
+    </script>
+</body>
+</html>

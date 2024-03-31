@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Check Numbers Last Digit Same</title>
+</head>
+<body>
+    
+
+    <script>
+        let num1 = parseInt(prompt('Enter First Value'));
+        let num2 = parseInt(prompt('Enter Second Value'));
+
+        let res1 = num1 % 10;
+        let res2 = num2 % 10;
+        if(res1 == res2 ){
+            console.log('Last Digit Same');
+        }
+        else{
+            console.log('Last Digit Not Same');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Chekc if a  Number is Negative , Positive or Zero </title>
+</head>
+<body>
+    
+    <input type="number" name="name" id="name">
+    <button onclick="Check()">Click</button>
+
+    <script>
+        // let a = parseInt(prompt('Enter Number'));
+        function Check(){
+        const a = document.getElementById('name').value;
+        if(a > 0){
+            console.log('Number Positive');
+        }else if(a == 0){
+            console.log('Number Zero');
+        }else{
+            console.log('Number Negative');
+        }
+    }
+        // console.log(Math.sign(a));
+    </script>
+</body>
+</html>

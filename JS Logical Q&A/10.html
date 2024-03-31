@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Check Number is Odd Or Even</title>
+</head>
+<body>
+    <input type="number" id="name">
+    <button onclick="check()">Click</button>
+
+
+    <script>
+
+        function check(){
+            // using if else 
+            let a = document.getElementById('name').value;
+            // if(a % 2 == 0){
+            //     console.log('Number is Even');
+            // }else{
+            //     console.log('Number is Odd');
+            // }
+
+        //    using ternery oprator
+          let b =  a % 2 == 0 ? 'Number Even' : 'Number Odd';
+          console.log(b);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Largest Number Among Three Numbers</title>
+</head>
+<body>
+    
+
+    <script>
+        let a = parseInt(prompt("Enter First Number"));
+        let b = parseInt(prompt("Enter Second Number"));
+        let c = parseInt(prompt("Enter Third Number"));
+
+        function check(){
+        if(a > b && a > c){
+            console.log(`${a} is greater then ${b} and ${c}`);
+        } 
+        else if(b > a && b > c){
+            console.log(`${b} is greater then ${a} and ${c}`);
+        }                   
+        else{
+            console.log(`${c} is greater then ${a} and ${b }`);
+        }
+        }
+
+
+        check();
+        let res = Math.max(a, b, c)
+        console.log(res)
+
+
+    </script>
+</body>
+</html>

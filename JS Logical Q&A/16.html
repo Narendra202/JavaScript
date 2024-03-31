@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Check Armstrong Number</title>
+</head>
+<body>
+    
+    <script>
+        let number = (prompt("Enter Number"));
+        let numOfDegits = number.toString().length;
+        let temp = number;
+        let sum = 0;
+
+        while(temp > 0){
+            let digit = temp % 10;
+            sum += digit ** numOfDegits;
+            temp = parseInt(temp / 10);
+        }
+
+
+        if(sum == number){
+            console.log('this is armstrong number');
+        }else{
+            console.log('this is not armstrong number');
+        }
+    </script>
+</body>
+</html>
